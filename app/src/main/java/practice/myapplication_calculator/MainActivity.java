@@ -25,65 +25,60 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        e1 = (EditText) findViewById(R.id.editText);  //밑줄 표시
-        e1.setHint("첫 번째 숫자를 입력하세요.");
-        InputFilter[] EditFilter = new InputFilter[1];
-        EditFilter[0] = new InputFilter.LengthFilter(10);
-        e1.setFilters(EditFilter);                      //최대 10글자 표시
-        e1.setFocusable(false);                        //처음 시작될 때 포커스 지정 안하도록 설정
-        e1.setInputType(InputType.TYPE_CLASS_NUMBER);//숫자만 입력할 수 있게 설정
-
-        e2 = (EditText) findViewById(R.id.editText2);   //밑줄 표시
-        e2.setHint("두 번째 숫자를 입력하세요.");
-        InputFilter[] EditFilter2 = new InputFilter[1];
-        EditFilter2[0] = new InputFilter.LengthFilter(10);
-        e2.setFilters(EditFilter2);                     //최대 10글자 표시
-        e2.setFocusable(false);                        //처음 시작될 때 포커스 지정 안하도록 설정
-        e2.setInputType(InputType.TYPE_CLASS_NUMBER);//숫자만 입력할 수 있게 설정
-
         label1 = (TextView) findViewById(R.id.textView);
 
         b1 = (Button) findViewById(R.id.button);
         b1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                e1 = (EditText) findViewById(R.id.editText);
+                e2 = (EditText) findViewById(R.id.editText2);
                 int input1 = Integer.parseInt(e1.getText().toString());
                 int input2 = Integer.parseInt(e2.getText().toString());
                 int result;
                 result = input1 + input2;
-                label1.setText(" "+result+" ");
+                label1.setText("계산 결과는 : "+result+" ");
+
+
             }
         });
 
         b2 = (Button) findViewById(R.id.button2);
         b2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                e1 = (EditText) findViewById(R.id.editText);
+                e2 = (EditText) findViewById(R.id.editText2);
                 int input1 = Integer.parseInt(e1.getText().toString());
                 int input2 = Integer.parseInt(e2.getText().toString());
                 int result;
                 result = input1 - input2;
-                label1.setText(" "+result+" ");
+                label1.setText("계산 결과는 : "+result+" ");
+
             }
         });
 
         b3 = (Button) findViewById(R.id.button3);
         b3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                e1 = (EditText) findViewById(R.id.editText);
+                e2 = (EditText) findViewById(R.id.editText2);
                 int input1 = Integer.parseInt(e1.getText().toString());
                 int input2 = Integer.parseInt(e2.getText().toString());
                 int result;
                 result = input1 * input2;
-                label1.setText(" "+result+" ");
+                label1.setText("계산 결과는 : "+result+" ");
             }
         });
 
         b4 = (Button) findViewById(R.id.button4);
         b4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                e1 = (EditText) findViewById(R.id.editText);
+                e2 = (EditText) findViewById(R.id.editText2);
                 int input1 = Integer.parseInt(e1.getText().toString());
                 int input2 = Integer.parseInt(e2.getText().toString());
                 int result;
                 result = input1 / input2;
-                label1.setText(" "+result+" ");
+                label1.setText("계산 결과는 : "+result+" ");
             }
         });
     }
