@@ -26,11 +26,12 @@
 <img src=https://github.com/jw3400/Android_Calculator/blob/master/app/picture/insert2.png width=200>
 &nbsp;&nbsp;
 <img src=https://github.com/jw3400/Android_Calculator/blob/master/app/picture/insert3.png width=200>
-&nbsp;&nbsp;
+
 <img src=https://github.com/jw3400/Android_Calculator/blob/master/app/picture/insert4.png width=200>
 &nbsp;&nbsp;
 <img src=https://github.com/jw3400/Android_Calculator/blob/master/app/picture/insert5.png width=200>
 </br>
+실수형으로 더하기,빼기,곱하기,나누기,나머지 연산을 수행하도록 하였습니다.
 
 <br>
 <img src=https://github.com/jw3400/Android_Calculator/blob/master/app/picture/error1.png width=200>
