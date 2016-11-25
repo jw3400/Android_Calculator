@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (e1.getText().toString().equals("") || e2.getText().toString().equals("")) {
                     Toast.makeText(getApplicationContext(), "숫자를 입력하지 않았습니다.", Toast.LENGTH_LONG).show();
+                    label1.setText("계산 결과는 : 알 수 없습니다.");
                 }
                 else {
                     result = Double.parseDouble(input1) + Double.parseDouble(input2);
@@ -59,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (e1.getText().toString().equals("") || e2.getText().toString().equals("")) {
                     Toast.makeText(getApplicationContext(), "숫자를 입력하지 않았습니다.", Toast.LENGTH_LONG).show();
+                    label1.setText("계산 결과는 : 알 수 없습니다.");
                 }
                 else {
                     result = Double.parseDouble(input1) - Double.parseDouble(input2);
@@ -79,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (e1.getText().toString().equals("") || e2.getText().toString().equals("")) {
                     Toast.makeText(getApplicationContext(), "숫자를 입력하지 않았습니다.", Toast.LENGTH_LONG).show();
+                    label1.setText("계산 결과는 : 알 수 없습니다.");
                 }
                 else {
                     result =  Double.parseDouble(input1) * Double.parseDouble(input2);
@@ -98,9 +101,11 @@ public class MainActivity extends AppCompatActivity {
 
                 if (e1.getText().toString().equals("") || e2.getText().toString().equals("")) {
                     Toast.makeText(getApplicationContext(), "숫자를 입력하지 않았습니다.", Toast.LENGTH_LONG).show();
+                    label1.setText("계산 결과는 : 알 수 없습니다.");
                 }
                 else if (e2.getText().toString().equals("0")) {
                     Toast.makeText(getApplicationContext(), "0으로 나눌 수 없습니다.", Toast.LENGTH_LONG).show();
+                    label1.setText("계산 결과는 : 알 수 없습니다.");
                 }
                 else {
                     result = Double.parseDouble(input1) / Double.parseDouble(input2);
@@ -121,9 +126,11 @@ public class MainActivity extends AppCompatActivity {
 
                 if (e1.getText().toString().equals("") || e2.getText().toString().equals("")) {
                     Toast.makeText(getApplicationContext(), "숫자를 입력하지 않았습니다.", Toast.LENGTH_LONG).show();
+                    label1.setText("계산 결과는 : 알 수 없습니다.");
                 }
                 else if (e2.getText().toString().equals("0")) {
                     Toast.makeText(getApplicationContext(), "0으로 나머지를 못 구합니다.", Toast.LENGTH_LONG).show();
+                    label1.setText("계산 결과는 : 알 수 없습니다.");
                 }
                 else {
                     result = Double.parseDouble(input1) % Double.parseDouble(input2);
